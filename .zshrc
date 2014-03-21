@@ -3,7 +3,7 @@ export DOTFILES=$HOME/dotfiles
 source $DOTFILES/antigen/antigen.zsh
 
 # Apply my custom things
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
 # Setup some environment variables
 export WORKON_HOME=$HOME/.virtualenvs
@@ -55,6 +55,7 @@ export EDITOR=$(which vim)
 export GOPATH=$HOME/j/oss/gocode
 
 export PATH=$PATH:$GOPATH/bin
+export SKOSHAPP=/Users/zaccardi/j/skosh
 
 export SITES_ROOT=$HOME/j/ndus/cf-apps
 
