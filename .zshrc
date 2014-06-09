@@ -1,10 +1,11 @@
 source $HOME/dotfiles/antigen/antigen.zsh
 
 # Apply my custom things
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:node_modules/.bin
 
-# Setup some environment variables 
+# Setup some environment variables
 export WORKON_HOME=$HOME/.virtualenvs
+
 export PROJECT_HOME=$HOME/j
 
 # Load oh-my-zsh library.
@@ -40,14 +41,18 @@ antigen theme https://gist.github.com/7885406.git personal
 # Tell antigen that you're done.
 antigen apply
 
-# Set up pyenv
-eval "$(pyenv init -)"
-pyenv virtualenvwrapper_lazy
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)";
+    pyenv virtualenvwrapper
+    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+fi
 
 # Setup gopath
 export GOPATH=$HOME/j/oss/gocode
 
 export PATH=$PATH:$GOPATH/bin
+
+export CF_SITES=/Users/nickzaccardi/j/und/sites
 
 # Setup some helpful aliases
 alias gs="git status"
