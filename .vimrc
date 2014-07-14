@@ -42,6 +42,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'dahu/Insertlessly'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 Bundle 'fholgado/minibufexpl.vim'
 
 " Reference Library Plugins
@@ -98,6 +99,7 @@ set title                   " Show the title in MacVim
 set visualbell              " Who doesn't like a visual bell?!?
 set nobackup                " This just causes problems
 set noswapfile              " Swapfiles are more of a pain for me then they are helpful
+set cm=blowfish             " Encryption type
 
 
 "------------------------------------------------------------------------------
@@ -107,6 +109,7 @@ set expandtab               " Expand tabs to spaces
 set tabstop=4               " Number of spaces a tab counts for
 set softtabstop=4           " Soft-tab width in spaces
 set shiftwidth=4            " Number of spaces for each >>
+set autoindent              " Turn on auto indentation
 
 "------------------------------------------------------------------------------
 " Syntax Highlighting and Color
@@ -131,8 +134,6 @@ autocmd FileType rst set tabstop=2     " Indent by two
 autocmd FileType rst set softtabstop=2 " Indent by two
 autocmd FileType rst set shiftwidth=2  " Indent by two
 
-
-
 "------------------------------------------------------------------------------
 " Editor Settings
 "------------------------------------------------------------------------------
@@ -142,6 +143,7 @@ autocmd VimResized * wincmd = " Make vim equalize when resized
 " Plugin  Settings
 "------------------------------------------------------------------------------
 let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeHijackNetrw=1
 let g:riv_fold_auto_update = 0       " Turn off auto folding on save for rst files
 let g:miniBufExplBRSplit = 0         " put MBE on top
 let g:miniBufExplBuffersNeeded = 1
@@ -192,3 +194,9 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 nnoremap <leader>l :CtrlPLine<cr>
 nnoremap <leader>k :NERDTreeToggle<CR> " Toggle NERDTree
 
+"------------------------------------------------------------------------------
+" Custom Functions
+"------------------------------------------------------------------------------
+
+" Pretty up a JSON File
+com! FormatJSON %!python -m json.tool

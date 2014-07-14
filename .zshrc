@@ -52,7 +52,7 @@ export GOPATH=$HOME/j/oss/gocode
 
 export PATH=$PATH:$GOPATH/bin
 
-export CF_SITES=/Users/nickzaccardi/j/und/sites
+export SITES_ROOT=/Users/nickzaccardi/j/und/
 
 # Setup some helpful aliases
 alias gs="git status"

@@ -1,14 +1,15 @@
 {
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"font_face": "SourceCodePro-Light",
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"Vintage"
+		"SideBarEnhancements",
+		"Vintage",
+		"Theme - Soda",
+		"GitGutter"
 	],
 	"scroll_past_end": true,
 	"soda_folder_icons": true,
 	"tab_size": 4,
-	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
