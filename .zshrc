@@ -1,7 +1,7 @@
 source $HOME/dotfiles/antigen/antigen.zsh
 
 # Apply my custom things
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:node_modules/.bin
+export PAHT=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
 
 # Setup some environment variables
 export WORKON_HOME=$HOME/.virtualenvs
