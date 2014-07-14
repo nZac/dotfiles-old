@@ -1,4 +1,6 @@
-source $HOME/dotfiles/antigen/antigen.zsh
+export DOTFILES=$HOME/dotfiles
+
+source $DOTFILES/antigen/antigen.zsh
 
 # Apply my custom things
 export PAHT=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin

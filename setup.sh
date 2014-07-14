@@ -1,14 +1,25 @@
+export DOTFILES=$HOME/dotfiles
+
+# switch to zsh
+chsh -s /bin/zsh
+
+# Install Homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+# Install all the applications I want
+zsh $DOTFILES/applications.zsh
+
+# Get my dotfiles
 git clone --recursive https://github.com/nZac/dotfiles.git $HOME/dotfiles
 
-echo "Creating environment variables..."
-export DOTFILES=$HOME/dotfiles
+echo "Creating environment"
 
 echo "installing fonts"
 mkdir -p $HOME/.fonts
 cp -r $DOTFILES/fonts/* $HOME/.fonts
 
 echo "linking zsh"
-ln -sfv $DOTFILES/.zshrc $HOME/.zshrc  
+ln -sfv $DOTFILES/.zshrc $HOME/.zshrc
 
 echo "setting up vim"
 ln -sfv $DOTFILES/.vimrc $HOME/.vimrc
