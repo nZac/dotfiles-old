@@ -14,6 +14,7 @@ applications=(
     'nvalt'
     'Divvy'
     'pycharm'
+    'limechat'
 )
 
 brew tap caskroom/cask

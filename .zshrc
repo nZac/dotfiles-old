@@ -3,7 +3,7 @@ export DOTFILES=$HOME/dotfiles
 source $DOTFILES/antigen/antigen.zsh
 
 # Apply my custom things
-export PAHT=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
 
 # Setup some environment variables
 export WORKON_HOME=$HOME/.virtualenvs
@@ -49,12 +49,14 @@ if which pyenv > /dev/null; then
     export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 fi
 
+export EDITOR=$(which vim)
+
 # Setup gopath
 export GOPATH=$HOME/j/oss/gocode
 
 export PATH=$PATH:$GOPATH/bin
 
-export SITES_ROOT=/Users/nickzaccardi/j/und/
+export SITES_ROOT=$HOME/j/ndus/cf-apps
 
 # Setup some helpful aliases
 alias gs="git status"

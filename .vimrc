@@ -44,6 +44,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " Reference Library Plugins
 Bundle 'tomtom/tlib_vim'
@@ -56,7 +57,6 @@ Bundle 'hallison/vim-markdown'
 
 " Plugins that are nice in order of use
 Bundle 'scrooloose/nerdtree'
-Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/syntastic'
 Bundle 'honza/vim-snippets'
 Bundle 'mattn/emmet-vim'
@@ -66,7 +66,7 @@ Bundle 'Yggdroot/indentLine'
 
 filetype on
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'Rykka/riv.vim'
+"Bundle 'Rykka/riv.vim'
 
 if iCanHazVundle == 0
     echo "Installing Vundle packages"
@@ -148,6 +148,7 @@ let g:riv_fold_auto_update = 0       " Turn off auto folding on save for rst fil
 let g:miniBufExplBRSplit = 0         " put MBE on top
 let g:miniBufExplBuffersNeeded = 1
 let g:ctrlp_working_path_mode = 'ra' " Set the working path to a .git folder
+let g:ctrlp_show_hidden = 1
 let g:UltiSnipsExpandTrigger="<tab>"
 
 "------------------------------------------------------------------------------
