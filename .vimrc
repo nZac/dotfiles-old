@@ -45,6 +45,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'ervandew/supertab'
 
 " Reference Library Plugins
 Bundle 'tomtom/tlib_vim'
@@ -62,7 +64,6 @@ Bundle 'honza/vim-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'godlygeek/tabular'
 Bundle 'Yggdroot/indentLine'
-
 
 filetype on
 Bundle 'scrooloose/nerdcommenter'
@@ -91,7 +92,7 @@ set number                  " Show line numbers
 set t_Co=256                " 256 colors, go iTerm 2 baby!
 set scrolloff=999           " Always keep the cursor in the middle  of the page
 set showmatch               " Highlight the opposing bracket
-set noshowmode                " Show the mode of the current buffer (visual, insert)
+set noshowmode              " Show the mode of the current buffer (visual, insert)
 set spell spelllang=en      " Set spelling to be English
 set splitbelow              " Splits should open below
 set splitright              " Splits should open right
@@ -100,12 +101,14 @@ set visualbell              " Who doesn't like a visual bell?!?
 set nobackup                " This just causes problems
 set noswapfile              " Swapfiles are more of a pain for me then they are helpful
 set cm=blowfish             " Encryption type
+set foldmethod=indent       " Fold based on the indent level
 
 
 "------------------------------------------------------------------------------
 " Tab Settings
 "------------------------------------------------------------------------------
 set expandtab               " Expand tabs to spaces
+set autoindent
 set tabstop=4               " Number of spaces a tab counts for
 set softtabstop=4           " Soft-tab width in spaces
 set shiftwidth=4            " Number of spaces for each >>

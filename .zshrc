@@ -5,6 +5,8 @@ source $DOTFILES/antigen/antigen.zsh
 # Apply my custom things
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
+source $HOME/dotfiles/antigen/antigen.zsh
+
 # Setup some environment variables
 export WORKON_HOME=$HOME/.virtualenvs
 
