@@ -1,5 +1,5 @@
 session:
-    name: "ndus"
+    name: "dev"
     windows:
         - name: "FORMS"
           root: "~/j/ndus/cf-apps/sites/forms"

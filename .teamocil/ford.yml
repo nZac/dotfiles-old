@@ -1,5 +1,5 @@
 session:
-    name: "ndus"
+    name: "dev"
     windows:
         - name: "FORD"
           root: "~/j/ndus/vms/ford"

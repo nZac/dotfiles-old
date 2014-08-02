@@ -1,11 +1,10 @@
 session:
-
     name: "dev"
     windows:
-        - name: "DOTFILES"
-          root: "~/dotfiles"
+        - name: "SK-INFRA"
+          root: "~/j/vms/skosh-infra"
           clear: true
-          layout: "fe2a,272x66,0,0{191x66,0,0,1,80x66,192,0[80x33,192,0,2,80x32,192,34,5]}"
+          layout: "09a0,204x55,0,0{142x55,0,0,3,61x55,143,0[61x27,143,0,4,61x27,143,28,7]}"
           panes:
             - cmd: "vim"
             - cmd: "git status && l"
