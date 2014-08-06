@@ -4,10 +4,10 @@ session:
     windows:
         - name: "DOTFILES"
           root: "~/dotfiles"
-          clear: true
           layout: "fe2a,272x66,0,0{191x66,0,0,1,80x66,192,0[80x33,192,0,2,80x32,192,34,5]}"
+          clear: true
           panes:
             - cmd: "vim"
-            - cmd: "git status && l"
-            - cmd: ""
+            - cmd: "git status"
+            - cmd: "l"
 
