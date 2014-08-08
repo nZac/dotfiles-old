@@ -1,0 +1,12 @@
+session:
+    name: "dev"
+    windows:
+        - name: "RRWR"
+          root: "~/j/skosh/lev12/rr-web-repo"
+          clear: true
+          layout: "09a0,204x55,0,0{142x55,0,0,3,61x55,143,0[61x27,143,0,4,61x27,143,28,7]}"
+          panes:
+            - cmd: "vim"
+            - cmd: "git status && l"
+            - cmd: ""
+
