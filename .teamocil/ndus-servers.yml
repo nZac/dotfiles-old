@@ -1,0 +1,13 @@
+session:
+    name: "dev"
+    windows:
+        - name: "SERVERS"
+          root: "~"
+          layout: tiled
+          clear: true
+          panes:
+            - cmd: "ls"
+            - cmd: "ls"
+            - cmd: "echo NGROK"
+            - cmd: "echo NGROK"
+

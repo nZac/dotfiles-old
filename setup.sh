@@ -1,7 +1,9 @@
-export DOTFILES=$HOME/dotfiles
+export DOTFILES=$HOME/dotfiles # switch to zsh
 
-# switch to zsh
-chsh -s /bin/zsh
+if [[ "$SHELL" != "/usr/local/bin/zsh" ]]; then
+    chsh -s /bin/zsh
+fi
+
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
@@ -20,6 +22,10 @@ cp -r $DOTFILES/fonts/* $HOME/.fonts
 
 echo "linking zsh"
 ln -sfv $DOTFILES/.zshrc $HOME/.zshrc
+
+echo "linking tmux"
+ln -sfv $DOTFILES/.tmux.conf $HOME/.tmux.conf
+ln -sfv $DOTFILES/.teamocil/ $HOME/.teamocil
 
 echo "setting up vim"
 ln -sfv $DOTFILES/.vimrc $HOME/.vimrc

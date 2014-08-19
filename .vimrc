@@ -130,6 +130,7 @@ set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
 filetype plugin on
 filetype plugin indent on
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby " Vagrant is ruby :(
+au BufNewFile,BufRead *.j2 set filetype=htmldjango
 
 autocmd BufRead * set foldlevel=999999 " Fold nothing
 autocmd FileType rst set textwidth=80  " wrap at 80
