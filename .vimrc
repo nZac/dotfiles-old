@@ -53,6 +53,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 
 " Language Plugins
+Bundle 'davejlong/cf-utils.vim'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'othree/html5.vim'
 Bundle 'hallison/vim-markdown'

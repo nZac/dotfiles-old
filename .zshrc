@@ -53,6 +53,8 @@ fi
 
 export EDITOR=$(which vim)
 
+eval $(ssh-agent)
+
 # Setup gopath
 export GOPATH=$HOME/j/oss/gocode
 
