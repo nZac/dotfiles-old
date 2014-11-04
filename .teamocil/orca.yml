@@ -2,12 +2,11 @@ session:
     name: "dev"
     windows:
         - name: "ORCA"
-          root: "~/j/ndus/py-apps/orca/"
+          root: "~/j/ndus/cf-apps/sites/orca"
           clear: true
-          layout: "fe2a,272x66,0,0{191x66,0,0,1,80x66,192,0[80x33,192,0,2,80x32,192,34,5]}"
+          layout: "114c,272x66,0,0{191x66,0,0,21,80x66,192,0[80x8,192,0,22,80x19,192,9,23,80x37,192,29,24]}"
           panes:
             - cmd: "vim"
+            - cmd: ""
             - cmd: "git status"
-            - cmd: "l"
-            - cmd: "orca runserver"
-
+            - cmd: "ll"

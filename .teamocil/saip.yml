@@ -1,13 +1,13 @@
 session:
     name: "dev"
     windows:
-        - name: "PROCTORING"
-          root: "~/j/ndus/cf-apps/sites/proctoring"
+        - name: "SAIP"
+          root: "~/j/ndus/py-apps/saip"
           clear: true
           layout: "114c,272x66,0,0{191x66,0,0,21,80x66,192,0[80x8,192,0,22,80x19,192,9,23,80x37,192,29,24]}"
           panes:
             - cmd: "vim"
-            - cmd: "grunt"
+            - cmd: ""
             - cmd: "git status"
             - cmd: "ll"
 

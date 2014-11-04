@@ -53,8 +53,6 @@ fi
 
 export EDITOR=$(which vim)
 
-eval $(ssh-agent)
-
 # Setup gopath
 export GOPATH=$HOME/j/oss/gocode
 
@@ -66,4 +64,21 @@ export SITES_ROOT=$HOME/j/ndus/cf-apps
 # Setup some helpful aliases
 alias gs="git status"
 alias lla="ls -la"
+alias ssh="TERM=xterm ssh"
 
+
+export SSH_AUTH_SOCK=~/.ssh/ssh_agent
+
+ssh-add -l >/dev/null 2>&1
+if [ $? = 2 ]; then
+   # No ssh-agent running
+   rm -rf $SSH_AUTH_SOCK
+   # >| allows output redirection to over-write files if no clobber is set
+   ssh-agent -a $SSH_AUTH_SOCK >| /tmp/.ssh-script
+   source /tmp/.ssh-script
+   echo $SSH_AGENT_PID >| ~/.ssh-agent-pid
+   rm /tmp/.ssh-script
+   echo "NEW SSH AGENT" $SSH_AGENT_PID
+else
+    echo "REUSING SSH AGENT" $SSH_AGENT_PID
+fi

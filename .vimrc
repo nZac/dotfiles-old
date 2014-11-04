@@ -65,6 +65,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'godlygeek/tabular'
 Bundle 'Yggdroot/indentLine'
+Plugin 'esneider/YUNOcommit.vim'
 
 filetype on
 Bundle 'scrooloose/nerdcommenter'
