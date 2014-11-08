@@ -57,6 +57,7 @@ Bundle 'davejlong/cf-utils.vim'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'othree/html5.vim'
 Bundle 'hallison/vim-markdown'
+Bundle 'wting/rust.vim'
 
 " Plugins that are nice in order of use
 Bundle 'scrooloose/nerdtree'
